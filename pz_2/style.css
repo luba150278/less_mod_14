@@ -1,0 +1,41 @@
+:root {
+  --color-hover: red;
+  --menu-bg: aquamarine;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#menu-title {
+  cursor: pointer;
+  font-size: 16px;
+}
+#menu-title:hover {
+  color: var(--color-hover);
+}
+.nav-wrap {
+  position: absolute;
+  height: 100vh;
+  background-color: var(--menu-bg);
+  padding: 20px;
+}
+nav {
+  margin-top: 20px;
+}
+ul {
+  list-style: none;
+}
+li {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+li:hover {
+  color: var(--color-hover);
+}
+li > p:last-child {
+  display: none;
+}
